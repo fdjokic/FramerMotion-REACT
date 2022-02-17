@@ -1,6 +1,5 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import React from "react";
+import { motion } from "framer-motion";
 import { useEffect } from "react";
 
 const containerVariants = {
@@ -22,19 +21,6 @@ const containerVariants = {
   exit: {
     x: "-100vw",
     transition: { ease: "easeInOut" },
-  },
-};
-
-const nextVariants = {
-  hidden: {
-    x: "-100vw",
-  },
-  visible: {
-    x: 0,
-    transition: {
-      type: "spring",
-      stiffness: 80,
-    },
   },
 };
 

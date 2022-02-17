@@ -42,19 +42,6 @@ const Toppings = ({ addTopping, pizza }) => {
     },
   };
 
-  const nextVariants = {
-    hidden: {
-      x: "-100vw",
-    },
-    visible: {
-      x: 0,
-      transition: {
-        type: "spring",
-        stiffness: 80,
-      },
-    },
-  };
-
   return (
     <motion.div
       className="toppings container"
